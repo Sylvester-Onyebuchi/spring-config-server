@@ -1,5 +1,5 @@
 spring:
-  message: "Hello user from cloud bus updated"
+  message: "Hello user from cloud bus updated 2"
   datasource:
     url: jdbc:postgresql://localhost:5430/auth_db
     username: sylvester
