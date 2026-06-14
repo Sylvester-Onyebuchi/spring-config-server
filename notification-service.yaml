@@ -13,8 +13,8 @@ spring:
   rabbitmq:
     host: localhost
     port: 5671
-    username: sylvester
-    password: sylvester
+    username: onahsylvester3@gmail.com
+    password: sylvester4life
 eureka:
   client:
     service-url:
