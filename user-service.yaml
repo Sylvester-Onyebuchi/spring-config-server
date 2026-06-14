@@ -23,7 +23,7 @@ spring:
     host: localhost
   data:
     redis:
-      host: redis
+      host: service_redis
       port: 6379
       password: sylvester@life
 jwt:
