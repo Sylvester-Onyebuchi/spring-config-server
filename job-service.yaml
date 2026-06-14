@@ -5,9 +5,9 @@ spring:
         jwt:
           public-key-location: classpath:public.pem
   datasource:
-    url: jdbc:postgresql://localhost:5430/job_db
-    username: sylvester
-    password: sylvester
+    url: jdbc:postgresql://localhost:5442/job_db
+    username: job_user
+    password: pass_for_job
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -16,20 +16,16 @@ spring:
   flyway:
     baseline-version: 0
     baseline-on-migrate: true
-    url: jdbc:postgresql://localhost:5430/job_db
-    user: sylvester
-    password: sylvester
+    url: jdbc:postgresql://localhost:5442/job_db
+    user: job_user
+    password: pass_for_job
     baseline-description: "init"
     enabled: true
   rabbitmq:
-    username: sylvester
-    password: sylvester
+    username: onahsylvester3@gmail.com
+    password: sylvester4life
     port: 5671
     host: localhost
-  data:
-    redis:
-      host: localhost
-      port: 6380
 eureka:
   client:
     service-url:
