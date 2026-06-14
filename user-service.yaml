@@ -25,6 +25,7 @@ spring:
     redis:
       host: localhost
       port: 6380
+      password: sylvester@life
 jwt:
   access-expiration: 900000
   refresh-expiration: 604800000
