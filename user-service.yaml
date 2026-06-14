@@ -1,34 +1,35 @@
 spring:
   message: "Hello user from cloud bus updated 3"
   datasource:
-    url: jdbc:postgresql://localhost:5430/auth_db
-    username: sylvester
-    password: sylvester
+    url: jdbc:postgresql://localhost:5440/auth_db
+    username: auth_user
+    password: pass_for_auth
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: validate
     show-sql: true
-    properties:
+    properties: 
       hibernate:
         format_sql: true
   flyway:
     baseline-version: 0
     baseline-on-migrate: true
-    url: jdbc:postgresql://localhost:5430/auth_db
-    user: sylvester
-    password: sylvester
+    url: jdbc:postgresql://localhost:5440/auth_db
+    user: auth_user
+    password: pass_for_auth
     baseline-description: "init"
     enabled: true
   rabbitmq:
-    username: sylvester
-    password: sylvester
+    username: onahsylvester3@gmail.com
+    password: sylvester4life
     port: 5671
     host: localhost
   data:
     redis:
       host: localhost
       port: 6380
+      password: sylvester@life
 jwt:
   access-expiration: 900000
   refresh-expiration: 604800000
