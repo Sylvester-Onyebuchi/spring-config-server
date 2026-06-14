@@ -42,15 +42,9 @@ spring:
               uri: lb://application-service
               predicates:
                 - Path=/api/v1/applications/**
-  profiles:
-    active: dev
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,busrefresh
+
