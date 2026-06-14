@@ -1,7 +1,13 @@
 server:
   port: 8087
+  
 
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5671
+    username: onahsylvester3@gmail.com
+    password: sylvester4life
   data:
     redis:
       host: localhost
