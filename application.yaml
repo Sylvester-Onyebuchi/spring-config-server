@@ -1,7 +1,11 @@
 
 global:
   redis:
+    host: localhost
+    port: 6380
     password: '{cipher}ee7c16a830b887c8ae753c899a558031efaa30470d056c69cad0b17891c7356c' 
   rabbitmq:
-    username: 
+    host: localhost
+    port: 5671
+    username: onahsylvester3@gmail.com
     password: '{cipher}37dff3b454a2ab2c912a9e04bfc80c2332577476d774da7db01bb989e191c97b'  
