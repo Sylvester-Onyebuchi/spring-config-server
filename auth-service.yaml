@@ -10,9 +10,9 @@ spring:
       
   data:
     redis:
-      host: localhost
-      port: 6380
-      password: '{cipher}90b14b4bf46dcd1c7708d33a7dc22843ef466f3c01ee01703bca0edbbc55765b'
+      host: ${global.redis.host}
+      port: ${global.redis.port}
+      password: ${global.redis.password}
       
   security:
     oauth2:
