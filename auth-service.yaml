@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5440/auth_db
-    username: auth_user
-    password: '{cipher}cbe5eca704baf5641b819cd30d2b27c8b26fd2e278b8985979f7061c51132df6'
+    username: ${global.database.auth-service.username}
+    password: ${global.database.auth-service.password}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
