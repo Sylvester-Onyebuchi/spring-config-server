@@ -1,5 +1,18 @@
 
 global:
+  database:
+    auth-service:
+      username: auth_user
+      password: '{cipher}0a292f77eaa8366daf7a09880b7652625bf8598e076f269b49f004ebfed27a95'
+    application-service:
+      username: app_user                      
+      password: '{cipher}43666c954ba54ce626985e19ab55c9923a6f033542df300920fa66274682460c732694d7199f4b9e160638dad7a6be9c'
+    company-service:
+      username: 
+      password: '{cipher}05aef6607e404e66c9d76876a7410101e9a7ca5ec2c257d1bb5989ff61cb05a650b45cc05ebcf558f4a809d86d47ab18'
+    job-service:
+      username:
+      password: '{cipher}b47df9a84cb6e763541f328acc1305a2caedfeef143a88139ca3f6f894a58e73'
   redis:
     host: localhost
     port: 6380
