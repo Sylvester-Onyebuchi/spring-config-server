@@ -11,10 +11,10 @@ spring:
           starttls:
             enable: true
   rabbitmq:
-    host: localhost
-    port: 5671
-    username: '{ciper}47339f20f0514a10f0d3aec649aa9723d186aa10893eed35b6ccb0c156a65b8acf03f2088a8b8ce1da65d725c8fdacc0'
-    password: '{ciper}68f873ebc05ae4e4a5b23ba977195933c4efc25b3e8c6b1b723f7c30652b8512'
+    host: ${global.rabbitmq.host}
+    port: ${global.rabbitmq.port}
+    username: ${global.rabbitmq.username}
+    password: ${global.rabbitmq.password}
 eureka:
   client:
     service-url:
