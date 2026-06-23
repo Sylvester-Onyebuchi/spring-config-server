@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5440/auth_db
     username: auth_user
-    password: pass_for_auth
+    password: '{cipher}cbe5eca704baf5641b819cd30d2b27c8b26fd2e278b8985979f7061c51132df6'
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -12,7 +12,7 @@ spring:
     redis:
       host: localhost
       port: 6380
-      password: sylvester@life
+      password: '{cipher}90b14b4bf46dcd1c7708d33a7dc22843ef466f3c01ee01703bca0edbbc55765b'
       
   security:
     oauth2:
@@ -28,6 +28,6 @@ keycloak:
   server-url: http://localhost:8079
   realm: spring-auth
   client-id: auth-cli
-  client-secret: YIepD1VtVzrFKFpyam02tbUL2iJImoLP
+  client-secret: '{ciper}6d0c55e11d29799d5898978d125796d5a1fbec7d7acefc047d7bfaef4cc0c8d1aaaf687849e02d119b2ad8e8d55a62335125d03a61512ced8c5190f17de84647'
 server:
   port: 8081
