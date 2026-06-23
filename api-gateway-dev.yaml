@@ -4,15 +4,15 @@ server:
 
 spring:
   rabbitmq:
-    host: localhost
-    port: 5671
-    username: onahsylvester3@gmail.com
-    password: sylvester4life
+    host: ${global.rabbitmq.host}
+    port: ${global.rabbitmq.port}
+    username: ${global.rabbitmq.username}
+    password: ${global.rabbitmq.password}
   data:
     redis:
-      host: localhost
-      port: 6380
-      password: sylvester@life
+      host: ${global.redis.host}
+      port: ${global.redis.port}
+      password: ${global.redis.password}
   security:
     oauth2:
       resourceserver:
