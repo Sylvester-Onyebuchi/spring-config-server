@@ -7,7 +7,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5441/company_db
     username: company_user
-    password: pass_for_company
+    password: '{ciper}6c9167d43bfbc48afbea9c5d3229ca081240e39f89d8d8e7e9d40b9b820bb26244163efe8885d4c3cafd3d77098f0c16'
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -17,14 +17,14 @@ spring:
     baseline-on-migrate: true
     url: jdbc:postgresql://localhost:5441/company_db
     user: company_user
-    password:  pass_for_company
+    password:  '{ciper}6c9167d43bfbc48afbea9c5d3229ca081240e39f89d8d8e7e9d40b9b820bb26244163efe8885d4c3cafd3d77098f0c16'
     baseline-description: "init"
     enabled: true
   rabbitmq:
-    username: onahsylvester3@gmail.com
-    password: sylvester4life
-    port: 5671
-    host: localhost
+    username: ${global.rabbitmq.username}
+    password: ${global.rabbitmq.password}
+    port: ${global.rabbitmq.port}
+    host: ${global.rabbitmq.host}
  
 eureka:
   client:
