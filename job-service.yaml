@@ -6,8 +6,8 @@ spring:
           issuer-uri: http://localhost:8079/realms/spring-auth
   datasource:
     url: jdbc:postgresql://localhost:5442/job_db
-    username: job_user
-    password: '{cipher}deb95df9795b548651b190c8678f7f17429839cafcf63d2678f27e07a491e698'
+    username: ${global.database.job-service.username}
+    password: ${global.database.job-service.password}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -17,8 +17,8 @@ spring:
     baseline-version: 0
     baseline-on-migrate: true
     url: jdbc:postgresql://localhost:5442/job_db
-    user: job_user
-    password: '{cipher}deb95df9795b548651b190c8678f7f17429839cafcf63d2678f27e07a491e698'
+    user: ${global.database.job-service.username}
+    password: ${global.database.job-service.password}
     baseline-description: "init"
     enabled: true
   rabbitmq:
