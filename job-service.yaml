@@ -3,9 +3,9 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8079/realms/spring-auth
+          issuer-uri: http://keycloak:8080/realms/spring-auth
   datasource:
-    url: jdbc:postgresql://localhost:5442/job_db
+    url: jdbc:postgresql://job_postgres:5432/job_db
     username: ${global.database.job-service.username}
     password: ${global.database.job-service.password}
     driver-class-name: org.postgresql.Driver
@@ -16,7 +16,7 @@ spring:
   flyway:
     baseline-version: 0
     baseline-on-migrate: true
-    url: jdbc:postgresql://localhost:5442/job_db
+    url: jdbc:postgresql://job_postgres:5432/job_db
     user: ${global.database.job-service.username}
     password: ${global.database.job-service.password}
     baseline-description: "init"
