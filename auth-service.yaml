@@ -28,6 +28,6 @@ keycloak:
   server-url: http://keycloak:8080
   realm: spring-auth
   client-id: auth-cli
-  client-secret: '{ciper}6d0c55e11d29799d5898978d125796d5a1fbec7d7acefc047d7bfaef4cc0c8d1aaaf687849e02d119b2ad8e8d55a62335125d03a61512ced8c5190f17de84647'
+  client-secret: '{cipher}6d0c55e11d29799d5898978d125796d5a1fbec7d7acefc047d7bfaef4cc0c8d1aaaf687849e02d119b2ad8e8d55a62335125d03a61512ced8c5190f17de84647'
 server:
   port: 8081
