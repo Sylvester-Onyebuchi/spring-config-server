@@ -18,7 +18,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8079/realms/spring-auth
+          issuer-uri: http://keycloak:8080/realms/spring-auth
 
 eureka:
   client:
