@@ -3,7 +3,9 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://keycloak:8080/realms/spring-auth
+          issuer-uri: http://localhost:8079/realms/spring-auth
+          jwk-set-uri: http://keycloak:8080/realms/spring-auth/protocol/openid-connect/certs
+        
   datasource:
     url: jdbc:postgresql://company_postgres:5432/company_db
     username: ${global.database.company-service.username}
